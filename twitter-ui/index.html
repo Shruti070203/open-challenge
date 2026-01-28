@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+        * {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+          font-family: 'Roboto', sans-serif;
+       }   
+
+        body {
+          background-color: black;
+       }
+
+        .tweet-card {
+            width: 600px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            padding: 15px;
+            display: flex;
+            gap: 10px;
+            margin: 20px auto;
+        }
+
+        .container-1 img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .container-2 {
+            flex: 1;
+        }
+
+        .container-3 {
+            display: flex;
+            gap: 8px;
+            position: relative;
+        }
+
+        .container-3 .name {
+            color: white;
+        }
+
+        .name {
+            font-weight: 700;
+        }
+
+        .username,
+        .time {
+            color: #555;
+        }
+
+        .icon-more,
+        .icon-close {
+            position: absolute; 
+             right: 0; 
+            cursor: pointer;
+        }
+
+        .icon-close {
+            right: 25px;
+        }
+
+        .container-5 .paragraph-container {
+            color: white;
+        }
+
+        .container-5 .para-container .para {
+            color: darkgray;
+        }
+
+        .container-2 .container-3 .username {
+            color: darkgray;
+        }
+
+        .container-2 .container-3 .time {
+            color: darkgray;
+        }
+
+        .container-2 .container-3 .icon-close {
+            color: darkgray;
+        }
+
+        .container-2 .container-3 .icon-more {
+            color: darkgray;
+        }
+
+        .container-4 p {
+            color: white;
+        }
+
+        .image-container .image-1 img {
+            width: 90%;
+            border-radius: 17px;
+            margin-top: 10px;
+            height: 400px;
+            object-fit: cover;
+        }
+
+        .container-6 button {
+            background-color: black;
+            border: none;
+            color: darkgray;
+            cursor: pointer;
+            padding: 6px 8px;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+
+        .container-6 {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 10px;
+        }
+
+        .icon {
+            width: 20px;
+            height: 20px;
+            fill: darkgray;
+        }
+
+        .bottom-right-icons {
+            display: flex;
+            gap: 2px;
+        }
+
+        .container-3 {
+            margin-bottom: 5px;
+        }
+
+        .container-4 {
+            margin-bottom: 20px;
+        }
+
+        .paragraph-container {
+            margin-bottom: 10px;
+        }
+
+       .tick {
+           width: 18px;
+           height: 18px;
+           margin-left: 4px;
+      }
+
+        .container-3 {
+           /* display: flex;
+           align-items: center; */
+           /* gap: 6px; */
+           font-size: 16px;
+        }
+
+        .icon-more {
+            font-size: 20px;
+        }
+
+        .icon-close {
+            font-size: 20px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="tweet-card">
+        <div class="container-1">
+            <img src="profile.jpg" alt="profile-image">
+        </div>
+        <div class="container-2">
+            <div class="container-3">
+                <span class="name">DAVID</span>
+               <svg class="tick" viewBox="0 0 24 24">
+                <path fill="#1DA1F2"
+                 d="M22.5 12c0-5.8-4.7-10.5-10.5-10.5S1.5 6.2 1.5 12 6.2 22.5 12 22.5 22.5 17.8 22.5 12z"/><path fill="white" d="M10.1 14.8l-2.4-2.4-1.2 1.2 3.6 3.6 7.2-7.2-1.2-1.2z"/></svg>
+
+                <span class="username">@1DAVID92</span>
+                <span class="time">· 15h</span>
+
+
+                <span class="icon-more">⋯</span>
+                <span class="icon-close">⨯</span>
+
+            </div>
+
+
+            <div class="container-4">
+                <p>
+                    FASTEST TO CENTURIES IN ALL FORMATS!!!! <br>
+                    (minimum innings 81)!!!
+                </p>
+            </div>
+
+            <div class="container-5">
+                <div class="paragraph-container">
+                    <div>20 Innings : KL Rahul</div>
+                    <div>52 Innings : Shubman Gill</div>
+                    <div>70 Innings : Mohammad Rizwan</div>
+                    <div>81 Innings : Dawid Malan...see more</div>
+                </div>
+
+
+                <div class="image-container">
+                    <div class="image-1">
+                        <img src="https://pbs.twimg.com/media/G_lR0D8XQAAjHyw?format=jpg" alt="image-1">
+                    </div>
+                </div>
+
+                <div class="para-container">
+                    <p class="para">Ahmed Says and 5 others</p>
+                </div>
+
+            </div>
+
+            <div class="container-6">
+                <button class="comment">
+                    <svg viewBox="0 0 24 24" class="icon">
+                        <path
+                            d="M1.751 10c0-4.42 3.584-8 8.005-8h4.366c4.49 0 8.129 3.64 8.129 8.13 0 2.96-1.607 5.68-4.196 7.11l-8.054 4.46v-3.69h-.067c-4.49.1-8.183-3.51-8.183-8.01zm8.005-6c-3.317 0-6.005 2.69-6.005 6 0 3.37 2.77 6.08 6.138 6.01l.351-.01h1.761v2.3l5.087-2.81c1.951-1.08 3.163-3.13 3.163-5.36 0-3.39-2.744-6.13-6.129-6.13H9.756z">
+                        </path>
+                    </svg>
+                    <span>27</span>
+                </button>
+
+
+                <button class="reshare">
+                    <svg viewBox="0 0 24 24" class="icon">
+                        <path d="M4.5 3.88l4.432 4.14-1.364 1.46-1.796-1.68V14c0 1.66 1.34 3 3 3h6v2h-6
+                        c-2.76 0-5-2.24-5-5V7.8L1.86 9.48.5 8.02 4.5 3.88zm15 16.24l-4.432-4.14 
+                        1.364-1.46 1.796 1.68V10c0-1.66-1.34-3-3-3h-6V5h6c2.76 0 5 2.24 5 5v6.2l1.796-1.68 1.364 1.46-4.432 4.14z" />
+                    </svg>
+                    <span>34</span>
+                </button>
+
+                <button class="like">
+                    <svg viewBox="0 0 24 24" class="icon">
+                        <path
+                            d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09 C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+                    </svg>
+                    <span>1.4K</span>
+                </button>
+
+                <button class="view">
+                    <svg viewBox="0 0 24 24" class="icon">
+                        <path d="M3 17h2v-7H3v7zm4 0h2V7H7v10zm4 0h2v-4h-2v4zm4 0h2V4h-2v13zm4 0h2v-9h-2v9z" />
+                    </svg>
+                    <span>246K</span>
+                </button>
+
+                <div class="bottom-right-icons">
+                    <button class="save"><svg viewBox="0 0 24 24" class="icon">
+                            <path d="M6 2h12a2 2 0 012 2v18l-8-5-8 5V4a2 2 0 012-2z" />
+                        </svg></button>
+
+                    <button class="download"><svg viewBox="0 0 24 24" class="icon">
+                            <path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7
+         c.05-.23.09-.46.09-.7 0-.24-.04-.47-.09-.7l7.02-4.11
+         A2.99 2.99 0 0018 7.91c1.66 0 3-1.35 3-3.01
+         A3 3 0 0018 2.9a3 3 0 00-3 3.01c0 .24.04.47.09.7L8.07 10.7
+         A2.99 2.99 0 006 9.91a3 3 0 00-3 3.01 3 3 0 003 3.01
+         2.99 2.99 0 002.07-.79l7.11 4.17c-.05.21-.08.43-.08.65
+         0 1.61 1.34 2.92 3 2.92s3-1.31 3-2.92-1.34-2.92-3-2.92z" />
+                        </svg></button>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
